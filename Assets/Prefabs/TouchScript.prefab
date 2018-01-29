@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1738712704441552}
+  m_IsPrefabParent: 1
+--- !u!1 &1738712704441552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4225179052154252}
+  - component: {fileID: 114534124787095030}
+  - component: {fileID: 114060993282274038}
+  - component: {fileID: 114105701064839272}
+  m_Layer: 0
+  m_Name: TouchScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4225179052154252
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1738712704441552}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114060993282274038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1738712704441552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4b35b5ee8a443439ce04199575743f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basicEditor: 1
+  tuioPort: 3333
+  supportedInputs: 7
+--- !u!114 &114105701064839272
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1738712704441552}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e5768c36d1bb4acea50bd233372843a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Layer
+  basicEditor: 0
+  advancedProps: 0
+  hitProps: 0
+  hit3DObjects: 0
+  hit2DObjects: 0
+  hitWorldSpaceUI: 0
+  hitScreenSpaceUI: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32
+  useHitFilters: 0
+--- !u!114 &114534124787095030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1738712704441552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd4c394fe06f4ea49e03aaa5e7a8190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnFrameStart:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TouchScript.TouchManager+FrameEvent, Assembly-CSharp, Version=1.0.2.23334,
+      Culture=neutral, PublicKeyToken=null
+  OnFrameFinish:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TouchScript.TouchManager+FrameEvent, Assembly-CSharp, Version=1.0.2.23334,
+      Culture=neutral, PublicKeyToken=null
+  OnPointersAdd:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TouchScript.TouchManager+PointerEvent, Assembly-CSharp, Version=1.0.2.23334,
+      Culture=neutral, PublicKeyToken=null
+  OnPointersUpdate:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TouchScript.TouchManager+PointerEvent, Assembly-CSharp, Version=1.0.2.23334,
+      Culture=neutral, PublicKeyToken=null
+  OnPointersPress:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TouchScript.TouchManager+PointerEvent, Assembly-CSharp, Version=1.0.2.23334,
+      Culture=neutral, PublicKeyToken=null
+  OnPointersRelease:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TouchScript.TouchManager+PointerEvent, Assembly-CSharp, Version=1.0.2.23334,
+      Culture=neutral, PublicKeyToken=null
+  OnPointersRemove:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TouchScript.TouchManager+PointerEvent, Assembly-CSharp, Version=1.0.2.23334,
+      Culture=neutral, PublicKeyToken=null
+  OnPointersCancel:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TouchScript.TouchManager+PointerEvent, Assembly-CSharp, Version=1.0.2.23334,
+      Culture=neutral, PublicKeyToken=null
+  basicEditor: 0
+  displayDevice: {fileID: 0}
+  shouldCreateCameraLayer: 0
+  shouldCreateStandardInput: 0
+  useSendMessage: 0
+  sendMessageEvents: 252
+  sendMessageTarget: {fileID: 0}
+  useUnityEvents: 0
+  layers:
+  - {fileID: 0}
+  - {fileID: 0}
