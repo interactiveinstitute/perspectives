@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1180661354417968}
+  m_IsPrefabParent: 1
+--- !u!1 &1180661354417968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4365428909156406}
+  - component: {fileID: 114768766553124928}
+  m_Layer: 0
+  m_Name: Traintracks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1717595124970024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4920070893118112}
+  - component: {fileID: 114647680113957442}
+  m_Layer: 0
+  m_Name: Trainflow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1811953843189934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4765570257958500}
+  m_Layer: 0
+  m_Name: Instanceholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4365428909156406
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1180661354417968}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8423.8, y: 58.313, z: -3666.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4920070893118112}
+  - {fileID: 4765570257958500}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4765570257958500
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1811953843189934}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1691.2822, y: 41.08502, z: -216.55591}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4365428909156406}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4920070893118112
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717595124970024}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 28.237305, y: -27.450714, z: -20.618652}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4365428909156406}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114647680113957442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717595124970024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b05778c04b8b30409e094bab41efbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spline: {fileID: 114768766553124928}
+  time: 0
+  count: 5
+  prefabs:
+  - {fileID: 1106196691902664, guid: 0380896643f92b6449c6a8f3a52462fd, type: 2}
+  instanceholder: {fileID: 4765570257958500}
+  speed: 50
+  lookForward: 1
+  mode: 1
+  progress: 0
+--- !u!114 &114768766553124928
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1180661354417968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fcc779d94e057647a4144ea37bdf73f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {x: 6.2109375, y: 0, z: 6.5410156}
+  - {x: 7.2109375, y: 0, z: 6.5410156}
+  - {x: 51.378906, y: -1.9596443, z: -14.029785}
+  - {x: 95.18848, y: 0.1675911, z: -27.203613}
+  - {x: 138.99805, y: 2.2948265, z: -40.37744}
+  - {x: 344.5625, y: 0, z: -131.91748}
+  - {x: 456.29492, y: 0, z: -172.53198}
+  - {x: 568.02734, y: 0, z: -213.14648}
+  - {x: 873.87695, y: -7.497059, z: -268.34668}
+  - {x: 1223.7783, y: -7.497059, z: -312.3911}
+  - {x: 1573.6797, y: -7.497059, z: -356.43555}
+  - {x: 1860.9951, y: -13.654411, z: -321.83325}
+  - {x: 2201.2598, y: -13.654411, z: -254.49878}
+  - {x: 2541.5244, y: -13.654411, z: -187.1643}
+  - {x: 2994.0645, y: -21.270409, z: 0.2512207}
+  - {x: 3421.2217, y: -21.270409, z: 189.86865}
+  createUniformSpline: 1
+  uniformSplineSampleDistance: 0.1
+  numMetersPerUniformPoint: 1
+  modes: 000000000200000002000000020000000200000002000000
+  loop: 0
+  displayWhenNotSelected: 1
+  splineSmoothness: 0.96
+  splineColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  pointSphereColor: {r: 1, g: 1, b: 1, a: 1}
+  pointSphereRadius: 0.3
