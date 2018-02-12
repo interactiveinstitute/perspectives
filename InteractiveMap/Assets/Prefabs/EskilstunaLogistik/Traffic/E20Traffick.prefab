@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1172209237233852}
+  m_IsPrefabParent: 1
+--- !u!1 &1166357281434780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4032453457470880}
+  - component: {fileID: 114055897577483330}
+  m_Layer: 0
+  m_Name: E20Spline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1172209237233852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4700148515572540}
+  m_Layer: 0
+  m_Name: E20Traffick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1430261331865878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4405822835991152}
+  - component: {fileID: 114928598766842068}
+  m_Layer: 0
+  m_Name: CarsTraffic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4032453457470880
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1166357281434780}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1244, y: 0, z: 69.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4700148515572540}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4405822835991152
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1430261331865878}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1393, y: 0, z: 134}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4700148515572540}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4700148515572540
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1172209237233852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10134, y: 42.12, z: -102}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4405822835991152}
+  - {fileID: 4032453457470880}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114055897577483330
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1166357281434780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fcc779d94e057647a4144ea37bdf73f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {x: -511.9668, y: 0, z: 109.50316}
+  - {x: -176.17383, y: 0, z: 20.942543}
+  - {x: 3.0726953, y: 0, z: 0}
+  - {x: 4.0726953, y: 0, z: 0}
+  - {x: 5.0726953, y: 0, z: 0}
+  - {x: 320.542, y: 0, z: -55.75573}
+  - {x: 705.7578, y: 0, z: -78.04132}
+  - {x: 1090.9736, y: 0, z: -100.32691}
+  - {x: 2024.9541, y: 4.116089, z: -84.607216}
+  - {x: 2369.4893, y: 4.116089, z: 3.0754013}
+  - {x: 2714.0244, y: 4.116089, z: 90.75802}
+  - {x: 3019.1387, y: 4.116089, z: 257.62274}
+  - {x: 3020.1387, y: 4.116089, z: 257.62274}
+  createUniformSpline: 1
+  uniformSplineSampleDistance: 0.1
+  numMetersPerUniformPoint: 1
+  modes: 0000000000000000020000000200000000000000
+  loop: 0
+  displayWhenNotSelected: 1
+  splineSmoothness: 0.96
+  splineColor: {r: 1, g: 0.015686274, b: 0.015686274, a: 1}
+  pointSphereColor: {r: 1, g: 1, b: 1, a: 1}
+  pointSphereRadius: 0.3
+--- !u!114 &114928598766842068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1430261331865878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b05778c04b8b30409e094bab41efbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spline: {fileID: 114055897577483330}
+  time: 0
+  count: 50
+  prefabs:
+  - {fileID: 100008, guid: c1b7aade1ba03b247a89579b9b4eecb9, type: 2}
+  - {fileID: 100000, guid: 0c823fe679c9a7c47bc994ca700ed165, type: 2}
+  - {fileID: 100008, guid: a4d49e1f9f286d248bbd508bd819da40, type: 2}
+  - {fileID: 100010, guid: f5f57d962cd65334d8f174f4d8a95fb8, type: 2}
+  - {fileID: 100010, guid: fa631b6966bd6244589c480eb2761211, type: 2}
+  - {fileID: 100008, guid: fd51049cb784cb44d8c617d12a2fb43c, type: 2}
+  - {fileID: 100008, guid: b3e3d2ceaa412d34f8db1b4b16d2865c, type: 2}
+  - {fileID: 100000, guid: 634351c8a6d526e43b7f8ac02d3b3706, type: 2}
+  - {fileID: 100008, guid: 60686cedfd655834d8eb2e7edfeaaeb3, type: 2}
+  instanceholder: {fileID: 4700148515572540}
+  speed: 60
+  lookForward: 1
+  mode: 1
+  progress: 0
